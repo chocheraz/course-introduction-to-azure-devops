@@ -11,6 +11,7 @@ namespace Tests
         [Test]
         public async Task SmokeTestHomePage()
         {
+            // Comentario para ejecutar un CI 
             var webAppUrl = TestContext.Parameters["WebAppUrl"];
             Console.WriteLine($"a: {webAppUrl == null}");
             var client = new HttpClient();
